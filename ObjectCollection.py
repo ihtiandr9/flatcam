@@ -218,10 +218,10 @@ class ObjectCollection:
 
         # TODO: Move the operation out of here.
 
-        xmin = Inf
-        ymin = Inf
-        xmax = -Inf
-        ymax = -Inf
+        xmin = inf
+        ymin = inf
+        xmax = -inf
+        ymax = -inf
 
         for obj in self.object_list:
             try:

@@ -10,7 +10,7 @@
 # import traceback
 
 from io import StringIO
-from numpy import arctan2, Inf, array, sqrt, pi, ceil, sin, cos, dot, float32, transpose
+from numpy import arctan2, inf, array, sqrt, pi, ceil, sin, cos, dot, float32, transpose
 from numpy.linalg import solve, norm
 from matplotlib.figure import Figure
 import re
@@ -3794,10 +3794,10 @@ class CNCjob(Geometry):
 
 
 # def get_bounds(geometry_set):
-#     xmin = Inf
-#     ymin = Inf
-#     xmax = -Inf
-#     ymax = -Inf
+#     xmin = inf
+#     ymin = inf
+#     xmax = -inf
+#     ymax = -inf
 #
 #     #print "Getting bounds of:", str(geometry_set)
 #     for gs in geometry_set:
@@ -3813,10 +3813,10 @@ class CNCjob(Geometry):
 #     return [xmin, ymin, xmax, ymax]
 
 def get_bounds(geometry_list):
-    xmin = Inf
-    ymin = Inf
-    xmax = -Inf
-    ymax = -Inf
+    xmin = inf
+    ymin = inf
+    xmax = -inf
+    ymax = -inf
 
     # print "Getting bounds of:", str(geometry_set)
     for gs in geometry_list:
